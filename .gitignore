@@ -67,3 +67,10 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+#idea config
+.idea
+.idea/codeStyles/codeStyleConfig.xml
+.idea/modules.xml
+*.iml
+.idea/vcs.xml

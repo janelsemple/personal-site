@@ -1,6 +1,6 @@
 :root {
   --border-radius: 4px;
-  --color-text: #333;
+  --color-text: #f9f8f8;
   --color-primary: #7026b9;
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
@@ -113,19 +113,7 @@ hr {
 *:after {
   box-sizing: inherit;
 }
-hgroup,
-img,
-figure,
-fieldset,
-ul,
-ol,
-dl,
-dd,
-p {
-  margin: 0;
-  padding: 0;
-  margin-bottom: var(--space-4);
-}
+
 ul,
 ol {
   margin-left: var(--space-4);
@@ -182,21 +170,7 @@ p {
 code {
   font-size: 0.875rem;
 }
-kbd {
-  font-size: 0.875rem;
-}
-samp {
-  font-size: 0.875rem;
-}
-abbr {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
-}
-acronym {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
-}
-tt,
+
 code {
   background-color: var(--color-code-bg);
   border-radius: var(--border-radius);
