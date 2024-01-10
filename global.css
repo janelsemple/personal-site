@@ -3,3 +3,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.contentDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 0 auto;
+}

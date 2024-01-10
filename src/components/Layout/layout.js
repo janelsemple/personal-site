@@ -27,10 +27,11 @@ const Layout = ({ children }) => {
       <div style={{
         maxWidth: '900px',
         margin: `0 auto`,
-        background: 'rgba(128, 128, 128, 0.3);',
+        background: 'rgba(128, 128, 128, 0.3)',
         borderRadius: '15px',
         height: '100vh',
         padding: `var(--size-gutter)`,
+
       }}>
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
         <div

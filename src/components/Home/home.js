@@ -4,9 +4,10 @@ import './home.module.css'
 const Home = ({ isHidden }) => {
 
   return(
-    <div>
-      <h1>Janel Is Awesome!</h1>
+    <div className={'contentDiv'}>
+      <h1 >Janel Is Awesome!</h1>
       <img src={image} alt={'Janel'}/>
+
     </div>
   )
 }
