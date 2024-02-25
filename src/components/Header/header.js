@@ -1,16 +1,10 @@
 import * as React from "react"
+import './header.module.css'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      margin: `0 auto`,
-      display: `flex`,
-      alignItems: `center`,
-      justifyContent: `space-between`,
-    }}
-  >
+  <header>
     <div
-    style={{flex: 'left'}}>
+      style={{flex: 'left'}}>
       {siteTitle}
     </div>
     <div style={{flex: 'right'}}>

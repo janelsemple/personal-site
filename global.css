@@ -1,12 +1,7 @@
-body {
-    background-image: url("src/images/gradient-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .contentDiv{
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    flex-flow: row wrap;
+    justify-content:space-around;
     margin: 0 auto;
 }

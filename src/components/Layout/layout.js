@@ -24,23 +24,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div style={{
-        maxWidth: '900px',
-        margin: `0 auto`,
-        background: 'rgba(128, 128, 128, 0.3)',
-        borderRadius: '15px',
-        height: '100vh',
-        padding: `var(--size-gutter)`,
-
-      }}>
+      <div className={'mainDiv'}>
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <div
-          style={{
-            margin: `0 auto`,
-            paddingTop: 'var(--size-gutter)',
-            maxWidth: `var(--size-content)`,
-          }}
-        >
+        <div className={'innerDiv'}>
           <main>{children}</main>
         </div>
       </div>

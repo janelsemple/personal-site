@@ -4,11 +4,13 @@ import Layout from "../components/Layout/layout"
 import Seo from "../components/seo/seo"
 import '../../global.css';
 import Home from "../components/Home/home"
+import Resume from "../components/Resume/resume"
 
 
 const IndexPage = () => (
   <Layout>
-  <Home isHidden='false'/>
+  <Home />
+  <Resume />
   </Layout>
 
 )
