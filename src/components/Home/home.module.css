@@ -6,8 +6,17 @@ img{
 
 .imgContainer{
     object-fit: contain;
+    margin: 20px;
 }
 
-.about{
-
+.infoDiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    border-radius: 15px;
+    margin: var(--space-3) auto;
+    padding: var(--space-4);
 }
+
+
+

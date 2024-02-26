@@ -48,10 +48,6 @@ body {
   background-size: cover;
 }
 
-main {
-  max-width: 900px;
-}
-
 a {
   background-color: transparent;
   color: var(--color-primary);
@@ -82,9 +78,13 @@ abbr[title] {
   box-sizing: inherit;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .mainDiv {
   margin: 0 auto;
-  border-radius: 15px;
   width: 100%;
   padding-top: 0;
   display: flex;
@@ -96,6 +96,7 @@ abbr[title] {
 
 .innerDiv {
   margin: 0 auto;
-  padding: var(--space-3);
   max-height: 100%;
 }
+
+
