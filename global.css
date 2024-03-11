@@ -2,7 +2,7 @@
 .contentDiv{
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-around;
+    justify-content:space-between;
     border-radius: 15px;
     margin: var(--space-3) auto;
     padding: var(--space-4);

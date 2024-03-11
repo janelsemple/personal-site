@@ -1,22 +1,37 @@
-img{
-    max-width: 200px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
 
 .imgContainer{
     object-fit: contain;
-    margin: 20px;
+    margin: 0 auto;
 }
 
 .infoDiv {
+    h1{
+        margin-top: 0;
+    }
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content:space-around;
     border-radius: 15px;
     margin: var(--space-3) auto;
-    padding: var(--space-4);
+    text-align: center;
 }
+
+@media (max-width: 1025px) {
+    .infoDiv {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+        border-radius: 15px;
+        margin: var(--space-3) auto;
+        text-align: center;
+        gap: 57px;
+    }
+
+    .imgContainer{
+        margin: 0;
+    }
+}
+
 
 
 
