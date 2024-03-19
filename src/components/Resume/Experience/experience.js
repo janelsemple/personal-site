@@ -2,8 +2,9 @@ import * as React from 'react';
 import {experienceItems} from '../../../data/data.js'
 const Experience = () => {
 return (
-  <div>
+  <div className={"contentDiv"}>
     <h1>Experience</h1>
+    <div className={"flexRow"}>
     {experienceItems.experience.map((item, index) => (
       <div key={index}>
         <h2>{item.workplace} - {item.location}</h2>
@@ -16,6 +17,7 @@ return (
         </ul>
       </div>
     ))}
+    </div>
   </div>
 )
 }

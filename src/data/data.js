@@ -65,6 +65,15 @@ export const educationItem = {
   GPA: '3.8'
 }
 
+export const courseWorkItems = {
+  courseWork: [
+    "Data Structures and Algorithms", "Object Oriented Design and Development", "Web Development",
+    "Database Management", "System Analysis and Design", "Operating Systems", "Software Testing",
+    "Project Management", "Security"
+  ]
+
+}
+
 export const skillsItems = {
   skills: [
     "Git", "AWS S3", "Docker", "Node", "React",

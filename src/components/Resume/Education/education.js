@@ -3,7 +3,7 @@ import { educationItem } from '../../../data/data.js'
 
 const Education = () => {
   return (
-    <div className="education">
+    <div className={"contentDiv"}>
       <h1>Education</h1>
         <h3>{educationItem.degree}</h3>
         <h4>{educationItem.institution}</h4>

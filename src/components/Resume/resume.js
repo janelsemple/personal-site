@@ -2,24 +2,18 @@ import * as React from "react"
 import Education from "./Education/education"
 import Experience from "./Experience/experience"
 import Projects from "./Projects/projects"
-import Skills from "./Skills/skills"
-import {resumeDiv} from './resume.module.css'
+import CourseWork from "./Coursework/coursework"
 const Resume = () => {
   return(
-
-      <div className={"contentDiv"}>
-        <div className={resumeDiv}>
-          <Projects />
-        </div>
-        <div className={resumeDiv}>
-          <Education />
+      <div >
           <Experience />
+          <Projects />
+        <div className={"flexRow"}>
+          <Education />
+          <CourseWork />
         </div>
-        <div className={resumeDiv}>
-          <Skills />
-        </div>
-      </div>
 
+      </div>
   )
 }
 

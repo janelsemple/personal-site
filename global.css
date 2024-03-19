@@ -1,11 +1,36 @@
 
 .contentDiv{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-between;
     border-radius: 15px;
-    margin: var(--space-3) auto;
-    padding: var(--space-4);
+    margin: var(--space-1);
     background: rgba(52, 51, 51, 0.4);
+    padding: var(--space-3);
 }
 
+.flexRow {
+    display: flex;
+    flex-direction: Row;
+    justify-content: space-evenly;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flexGrow1 {
+    flex-grow: 1;
+}
+
+.flexGrow2 {
+    flex-grow: 2;
+}
+
+.flexGrow3 {
+    flex-grow: 3;
+}
+
+.spaceEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
