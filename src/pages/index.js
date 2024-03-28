@@ -5,19 +5,22 @@ import Seo from "../components/seo/seo"
 import '../../global.css';
 import Home from "../components/Home/home"
 import Resume from "../components/Resume/resume"
-import Hobbies from "../components/Hobbies/hobbies"
+import Skills from "../components/Resume/Skills/skills"
 import About from "../components/About/about"
-import { homeDiv, growDiv } from './index.module.css'
+import { homeDiv, growDiv, mainDiv } from './index.module.css'
 
 const IndexPage = () => (
   <Layout>
+    <div className={mainDiv}>
     <div className={homeDiv}>
       <Home />
     </div>
     <div className={growDiv}>
       <About />
+
+      <Skills />
       <Resume />
-      <Hobbies />
+    </div>
     </div>
   </Layout>
 )

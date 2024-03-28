@@ -1,28 +1,28 @@
 import * as React from "react"
 import  {projectsItems} from "../../../data/data"
 import GitHubIcon from "@mui/icons-material/GitHub"
+import {smallSvg} from '../resume.module.css'
 
 const Projects = () => {
   return (
-    <div className={"contentDiv"} >
+    <div className={"contentDiv"}>
       <h1>Projects</h1>
-      <div className={"flexRow"}>
+      <hr />
       {projectsItems.projects.map((item, index) => (
         <div key={index}>
           <div className={"flexRow"}>
-          <h2>{item.title}</h2>
-          <a href={item.link} target="_blank" rel="noopener noreferrer">
-            <GitHubIcon iconStyle={{ fontSize: 'medium' }} />
-          </a>
+            <h2>{item.title}</h2>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <GitHubIcon className={smallSvg} />
+            </a>
           </div>
           <ul>
-          {item.description.map((desc, descIndex) => (
-            <li key={descIndex}>{desc}</li>
-          ))}
+            {item.description.map((desc, descIndex) => (
+              <li key={descIndex}>{desc}</li>
+            ))}
           </ul>
         </div>
       ))}
-      </div>
     </div>
   )
 }

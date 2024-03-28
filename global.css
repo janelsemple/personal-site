@@ -9,7 +9,7 @@
 .flexRow {
     display: flex;
     flex-direction: Row;
-    justify-content: space-evenly;
+    justify-content: left;
 }
 
 .flexColumn {
@@ -33,4 +33,8 @@
 .spaceEvenly {
     display: flex;
     justify-content: space-evenly;
+}
+
+.marginBottom {
+    margin-bottom: var(--space-5);
 }

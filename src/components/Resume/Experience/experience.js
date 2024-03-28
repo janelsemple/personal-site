@@ -4,12 +4,12 @@ const Experience = () => {
 return (
   <div className={"contentDiv"}>
     <h1>Experience</h1>
-    <div className={"flexRow"}>
+    <hr/>
     {experienceItems.experience.map((item, index) => (
-      <div key={index}>
+      <div className= {'marginBottom'} key={index}>
         <h2>{item.workplace} - {item.location}</h2>
         <h3>{item.title}</h3>
-        <p>{item.date}</p>
+        <h4>{item.date}</h4>
         <ul>
           {item.experience.map((exp, expIndex) => (
             <li key={expIndex}>{exp}</li>
@@ -17,7 +17,6 @@ return (
         </ul>
       </div>
     ))}
-    </div>
   </div>
 )
 }

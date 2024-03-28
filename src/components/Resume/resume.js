@@ -6,13 +6,9 @@ import CourseWork from "./Coursework/coursework"
 const Resume = () => {
   return(
       <div >
+          <Education />
           <Experience />
           <Projects />
-        <div className={"flexRow"}>
-          <Education />
-          <CourseWork />
-        </div>
-
       </div>
   )
 }

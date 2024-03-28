@@ -4,7 +4,7 @@ import shrimps from '../images/shrimps.jpg'
 
 export const aboutItem = {
   profileImageSrc: '/images/profile.jpg',
-  description: " Hello, and welcome to my site! In 2021 I had had enough of serving tables, and decided to take a leap of faith and go back to school. I have since achieved my diploma in Information Technology with a major in software development from The Southern Alberta Institute of Technology. I am now looking for a job in the IT industry, and I am excited to see where my new career will take me. I love to learn about all things tech, and I am always looking for new ways to challenge myself. I am also constantly listening to music 24/7, check out my current favorite playlist below."
+  description: " Hello, and welcome to my site! In 2021 I had had enough of serving tables, and decided to go back to school. I have since achieved my diploma in Information Technology with a major in software development from The Southern Alberta Institute of Technology. I am now looking for a job in the IT industry, and I am excited to see where my new career will take me. I love to learn about all things tech, and I am always looking for new ways to challenge myself. I am also constantly listening to music 24/7, check out my current favorite playlist below."
 }
 
 export const experienceItems = {
@@ -49,11 +49,6 @@ export const hobbiesItems = {
       description: "As most software engineers, I enjoy gaming. I play a variety of games, but I have a soft spot for RPGs, specifically The Elder Scrolls. I am currently on my second playthough of Baldur's Gate 3.",
       imageSrc: BG3
     },
-    {
-      title: 'Riding',
-      description: "I have been riding horses my entire life. I once worked on a ranch for a year exercising horses and helping with cattle. Currently I share a horse with my mother, and we ride together when we can.",
-      imageSrc: tango
-    }
   ]
 }
 
@@ -62,7 +57,7 @@ export const educationItem = {
   location: 'Calgary, AB',
   degree: 'Information Technology - Software Development',
   date: '2022 - 2023',
-  GPA: '3.8'
+  GPA: '3.9'
 }
 
 export const courseWorkItems = {
