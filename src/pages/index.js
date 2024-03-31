@@ -8,21 +8,23 @@ import Resume from "../components/Resume/resume"
 import Skills from "../components/Resume/Skills/skills"
 import About from "../components/About/about"
 import { homeDiv, growDiv, mainDiv } from './index.module.css'
+import { ScrollProvider} from "../contexts/ScrollContext"
 
 const IndexPage = () => (
-  <Layout>
-    <div className={mainDiv}>
-    <div className={homeDiv}>
-      <Home />
-    </div>
-    <div className={growDiv}>
-      <About />
-
-      <Skills />
-      <Resume />
-    </div>
-    </div>
-  </Layout>
+  <ScrollProvider>
+    <Layout>
+      <div className={mainDiv}>
+        <div className={homeDiv}>
+          <Home />
+        </div>
+        <div className={growDiv}>
+          <About />
+          <Skills />
+          <Resume />
+        </div>
+      </div>
+    </Layout>
+  </ScrollProvider>
 )
 
 /**

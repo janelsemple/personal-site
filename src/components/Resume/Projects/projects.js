@@ -2,10 +2,11 @@ import * as React from "react"
 import  {projectsItems} from "../../../data/data"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import {smallSvg} from '../resume.module.css'
-
+import {ScrollContext} from "../../../contexts/ScrollContext"
 const Projects = () => {
+  const {projects} = React.useContext(ScrollContext);
   return (
-    <div className={"contentDiv"}>
+    <div ref={projects} className={"contentDiv"}>
       <h1>Projects</h1>
       <hr />
       {projectsItems.projects.map((item, index) => (

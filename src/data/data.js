@@ -4,7 +4,7 @@ import shrimps from '../images/shrimps.jpg'
 
 export const aboutItem = {
   profileImageSrc: '/images/profile.jpg',
-  description: " Hello, and welcome to my site! In 2021 I had had enough of serving tables, and decided to go back to school. I have since achieved my diploma in Information Technology with a major in software development from The Southern Alberta Institute of Technology. I am now looking for a job in the IT industry, and I am excited to see where my new career will take me. I love to learn about all things tech, and I am always looking for new ways to challenge myself. I am also constantly listening to music 24/7, check out my current favorite playlist below."
+  description: " Hello, and welcome to my site! In 2021 I had had enough of serving tables, and decided to go back to school. I have since achieved my diploma in Information Technology with a major in software development from The Southern Alberta Institute of Technology. I am now looking for a job in the IT industry, and I am excited to see where my new career will take me. I love to learn about all things tech, and I am always looking for new ways to challenge myself."
 }
 
 export const experienceItems = {
@@ -15,7 +15,7 @@ export const experienceItems = {
       title: 'Junior Software Engineer',
       date: 'October 2023 - Present',
       experience: [
-        "Developed a solution using Python and Electron to create reports by sorting photos and creating PowerPoint presentations, reducing the time spent making reports by 50%.",
+        "Developed a solution for photo processing and PowerPoint creation using Python and Electron, reducing the time spent making reports by 50%.",
         "Used Websockets and Protocol Buffers to establish communication between Python and Electron components.",
         "Made use of python-specific libraries such as scikit learn and python-pptx while maintaining a robust and modular user interface with React and Typescript.",
         "Implemented a safe development environment using Docker and Docker Compose.",

@@ -1,5 +1,6 @@
 import * as React from "react"
 import {inner} from "./header.module.css"
+import NavBar from "../Navigation/navigation"
 
 const Header = ({ siteTitle }) => (
   <>
@@ -10,7 +11,7 @@ const Header = ({ siteTitle }) => (
       JS
     </div>
     <div style={{flex: 'right', marginRight: '1.3%'}}>
-      About &middot; Experience &middot; Hobbies
+      <NavBar />
     </div>
     </div>
   </header>

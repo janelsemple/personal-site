@@ -1,8 +1,13 @@
 import * as React from 'react';
 import {experienceItems} from '../../../data/data.js'
+import {ScrollContext} from "../../../contexts/ScrollContext"
+import { useContext } from "react"
+
 const Experience = () => {
+  const {experience} = useContext(ScrollContext);
+
 return (
-  <div className={"contentDiv"}>
+  <div ref={experience} className={"contentDiv"}>
     <h1>Experience</h1>
     <hr/>
     {experienceItems.experience.map((item, index) => (
