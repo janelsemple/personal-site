@@ -7,7 +7,7 @@ const Experience = () => {
   const {experience} = useContext(ScrollContext);
 
 return (
-  <div ref={experience} className={"contentDiv"}>
+  <div ref={experience} id='experience' className={"contentDiv"}>
     <h1>Experience</h1>
     <hr/>
     {experienceItems.experience.map((item, index) => (

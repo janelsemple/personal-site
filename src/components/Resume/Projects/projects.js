@@ -6,7 +6,7 @@ import {ScrollContext} from "../../../contexts/ScrollContext"
 const Projects = () => {
   const {projects} = React.useContext(ScrollContext);
   return (
-    <div ref={projects} className={"contentDiv"}>
+    <div ref={projects} id='projects' className={"contentDiv"}>
       <h1>Projects</h1>
       <hr />
       {projectsItems.projects.map((item, index) => (

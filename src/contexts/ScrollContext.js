@@ -1,5 +1,4 @@
-// ScrollContext.js
-import React, { createContext, useRef } from 'react';
+import React, { createContext, useRef, useState, useEffect } from 'react';
 
 export const ScrollContext = createContext(undefined);
 
@@ -7,11 +6,15 @@ export const ScrollProvider = ({ children }) => {
   const about = useRef(null);
   const experience = useRef(null);
   const projects = useRef(null);
+  const [currentView, setCurrentView] = useState('');
 
-  const scrollToRef = (ref) => ref.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  }
+
 
   return (
-    <ScrollContext.Provider value={{ about, experience, projects, scrollToRef }}>
+    <ScrollContext.Provider value={{ about, experience, projects, scrollToRef, currentView }}>
       {children}
     </ScrollContext.Provider>
   );

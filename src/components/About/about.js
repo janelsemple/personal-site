@@ -5,7 +5,7 @@ import {ScrollContext} from "../../contexts/ScrollContext"
 const About = () => {
   const {about} = React.useContext(ScrollContext);
   return(
-    <div ref={about} className={"spaceEvenly"}>
+    <div ref={about} id='about' className={"spaceEvenly"}>
       <div className={"contentDiv"}>
         <h1>About</h1>
         <hr />

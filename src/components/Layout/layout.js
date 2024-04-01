@@ -1,15 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
-
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "../Header/header"
-import "./layout.css"
+import React, { useRef } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Header from "../Header/header";
+import "./layout.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,18 +12,18 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
+
+  const mainDivRef = useRef(null); // Using useRef here
 
   return (
-    <>
-      <div className={'mainDiv'}>
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <div className={'innerDiv'}>
-          <main>{children}</main>
-        </div>
+    <div ref={mainDivRef} className={'mainDiv'}>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} scrollContainerRef={mainDivRef} />
+      <div className={'innerDiv'}>
+        <main>{children}</main>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

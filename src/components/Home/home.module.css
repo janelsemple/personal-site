@@ -2,6 +2,7 @@
 .imgContainer{
     object-fit: contain;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .infoDiv {

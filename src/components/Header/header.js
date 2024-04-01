@@ -1,21 +1,26 @@
-import * as React from "react"
-import {inner} from "./header.module.css"
-import NavBar from "../Navigation/navigation"
+// Header.js
+import React from "react";
+import { inner, header, headerVisible } from "./header.module.css";
+import NavBar from "../Navigation/navigation";
+import useScrollVisibility from "../../hooks/useHeader";
 
-const Header = ({ siteTitle }) => (
-  <>
-  <header>
-    <div className={inner}>
-    <div
-      style={{flex: 'left', marginLeft:'1.3%'}}>
-      JS
-    </div>
-    <div style={{flex: 'right', marginRight: '1.3%'}}>
-      <NavBar />
-    </div>
-    </div>
-  </header>
-  </>
-)
+const Header = ({ scrollContainerRef }) => {
+  const showHeader = useScrollVisibility(scrollContainerRef);
 
-export default Header
+  return (
+    <>
+      <header className={`${header} ${showHeader ? headerVisible : ''}`}>
+        <div className={inner}>
+          <div>
+            JS
+          </div>
+          <div>
+            <NavBar />
+          </div>
+        </div>
+      </header>
+    </>
+  );
+};
+
+export default Header;
