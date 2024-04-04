@@ -1,19 +1,22 @@
 
 .contentDiv{
     border-radius: 15px;
-    margin: var(--space-1);
     background: rgba(52, 51, 51, 0.4);
     padding: var(--space-3);
+    width: 100%;
 }
 
 .flexRow {
     display: flex;
     flex-direction: Row;
+    gap: var(--space-2);
     justify-content: left;
 }
 
 .flexColumn {
     display: flex;
+
+    gap: var(--space-1);
     flex-flow: row wrap;
     justify-content: space-evenly;
 }

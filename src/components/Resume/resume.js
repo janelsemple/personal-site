@@ -5,7 +5,7 @@ import Projects from "./Projects/projects"
 import CourseWork from "./Coursework/coursework"
 const Resume = () => {
   return(
-      <div >
+      <div className={'flexColumn'}>
           <Education />
           <Experience />
           <Projects />

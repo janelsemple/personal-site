@@ -21,6 +21,7 @@
 
 .skillDiv {
     display: flex;
+    gap: var(--space-1);
     flex-direction: row;
     justify-content: left;
 }

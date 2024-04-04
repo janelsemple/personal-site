@@ -78,12 +78,13 @@ main {
 }
 
 .mainDiv {
-  margin: 0 auto;
+  margin: 0 auto !important;
   width: 100%;
-  padding-top: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   overflow-y: scroll;
   height: 100vh;
 }
