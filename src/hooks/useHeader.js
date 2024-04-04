@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 
 const useScrollVisibility = (scrollRef) => {
   // Determine initial visibility based on window width
-  const [isVisible, setIsVisible] = useState(window.innerWidth <= 1025);
-
+  const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
+    setIsVisible(window.innerWidth <= 1025)
     const handleScroll = () => {
       // Ensure the ref is current and the scroll event is applicable
       if (scrollRef.current) {

@@ -1,9 +1,5 @@
-import tango from '../images/tango.jpg'
-import BG3 from '../images/BG3.jpg'
-import shrimps from '../images/shrimps.jpg'
 
 export const aboutItem = {
-  profileImageSrc: '/images/profile.jpg',
   description: " Hello, and welcome to my site! In 2021 I had had enough of serving tables, and decided to go back to school. I have since achieved my diploma in Information Technology with a major in software development from The Southern Alberta Institute of Technology. I am now looking for a job in the IT industry, and I am excited to see where my new career will take me. I love to learn about all things tech, and I am always looking for new ways to challenge myself."
 }
 
@@ -34,21 +30,6 @@ export const experienceItems = {
         "Participated in agile teams in all phases of the software development life cycle from design to deployment."
       ]
     }
-  ]
-}
-
-export const hobbiesItems = {
-  hobbies: [
-    {
-      title: 'Aquariums',
-      description: 'I have always been fascinated by fish and aquatic plants. I have two tanks at the moment, and enjoy making them for others on occasion. My current creatures are dozens of neocardina shrimp, and a beta fish named Merlin.',
-      imageSrc: shrimps
-    },
-    {
-      title: 'Gaming',
-      description: "As most software engineers, I enjoy gaming. I play a variety of games, but I have a soft spot for RPGs, specifically The Elder Scrolls. I am currently on my second playthough of Baldur's Gate 3.",
-      imageSrc: BG3
-    },
   ]
 }
 

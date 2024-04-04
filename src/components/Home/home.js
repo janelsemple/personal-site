@@ -5,10 +5,11 @@ import Links from '../Links/links';
 import Navbar from "../Navigation/navigation";
 
 const Home = () => {
-  const [showNavbar, setShowNavbar] = useState(window.innerWidth > 1025);
+  const [showNavbar, setShowNavbar] = useState(false);
 
   // Add event listener using useEffect to determine if the navbar should be shown
   useEffect(() => {
+    setShowNavbar(window.innerWidth > 1025)
     const handleResize = () => {
       setShowNavbar(window.innerWidth > 1025);
     };

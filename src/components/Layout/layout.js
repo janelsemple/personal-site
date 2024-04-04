@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Header from "../Header/header";
 import "./layout.css";
+import { ScrollProvider} from "../../contexts/ScrollContext";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -17,12 +18,15 @@ const Layout = ({ children }) => {
   const mainDivRef = useRef(null); // Using useRef here
 
   return (
-    <div ref={mainDivRef} className={'mainDiv'}>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} scrollContainerRef={mainDivRef} />
-      <div className={'innerDiv'}>
-        <main>{children}</main>
+    <ScrollProvider>
+      <div ref={mainDivRef} className={'mainDiv'}>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} scrollContainerRef={mainDivRef} />
+        <div className={'innerDiv'}>
+          <main>{children}</main>
+        </div>
       </div>
-    </div>
+    </ScrollProvider>
+
   );
 };
 
