@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import image from '../../images/janel.jpg';
+import { useStaticQuery, graphql } from "gatsby";
 import { infoDiv, imgContainer } from './home.module.css';
 import Links from '../Links/links';
 import Navbar from "../Navigation/navigation";
@@ -7,9 +7,16 @@ import Navbar from "../Navigation/navigation";
 const Home = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
-  // Add event listener using useEffect to determine if the navbar should be shown
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "janel.jpg" }) { 
+        publicURL
+      }
+    }
+  `);
+
   useEffect(() => {
-    setShowNavbar(window.innerWidth > 1025)
+    setShowNavbar(window.innerWidth > 1025);
     const handleResize = () => {
       setShowNavbar(window.innerWidth > 1025);
     };
@@ -25,7 +32,8 @@ const Home = () => {
         <Links />
       </div>
       <div className={imgContainer}>
-        <img className={"circle"} src={image} alt={'Janel'} />
+        {/* Update the src attribute to use the queried image URL */}
+        <img className={"circle"} src={data.file.publicURL} alt={'Janel'} />
       </div>
       {showNavbar && <Navbar />}
     </div>

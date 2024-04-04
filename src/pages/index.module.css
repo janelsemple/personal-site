@@ -26,7 +26,7 @@ img{
 .growDiv {
     display: flex;
     flex-direction: column;
-    gap: var(--space-2);
+    gap: var(--space-1);
     margin-left:303px;
     z-index: 0;
     padding-top:var(--space-1);

@@ -38,9 +38,6 @@ body {
   font-weight: 400;
   margin: 0;
   word-wrap: break-word;
-  background-image: url("../../images/gradient-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 a {
