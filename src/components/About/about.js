@@ -12,7 +12,6 @@ const About = () => {
         <p>
           {aboutItem.description}
         </p>
-        <Spotify wide width={'500px'} link={"https://open.spotify.com/playlist/4YSGQ3pTppHtYl8woTx8Hh?si=c71b2aa674d04666"} />
       </div>
     </div>
   )

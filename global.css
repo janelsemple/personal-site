@@ -14,20 +14,8 @@
 
 .flexColumn {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-}
-
-.flexGrow1 {
-    flex-grow: 1;
-}
-
-.flexGrow2 {
-    flex-grow: 2;
-}
-
-.flexGrow3 {
-    flex-grow: 3;
 }
 
 .spaceEvenly {

@@ -1,9 +1,9 @@
 import * as React from "react"
 import {skillsItems, languagesItems} from "../../../data/data";
-import {skillTag} from '../resume.module.css';
+import {skillTag, skillDiv} from '../resume.module.css';
 const Skills = () => {
   return (
-    <div className={"flexRow"}>
+    <div className={skillDiv}>
       <div className={"contentDiv"}>
         <h1>Skills</h1>
         <hr/>

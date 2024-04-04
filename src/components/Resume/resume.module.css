@@ -18,3 +18,15 @@
     text-align: center; /* Centers the text inside the tag */
     margin: 3px;
 }
+
+.skillDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+@media (max-width: 500px) {
+    .skillDiv {
+        flex-direction: column;
+    }
+}

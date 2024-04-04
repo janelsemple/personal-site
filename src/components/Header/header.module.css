@@ -6,7 +6,7 @@ header {
     padding: 10px;
     font-weight: 600;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     background: #0a0a0a;
     z-index: 3;
 }
@@ -22,9 +22,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-weight: normal;
+    width: 100%;
 }
-
-
 .header {
     z-index: 1000;
     position: fixed;

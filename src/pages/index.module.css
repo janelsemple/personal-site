@@ -46,7 +46,7 @@ img{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 572px) {
     .homeDiv {
         position: relative;
         margin-left: 0;

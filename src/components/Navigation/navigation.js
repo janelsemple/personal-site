@@ -1,31 +1,30 @@
-import React from 'react';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ScrollContext } from '../../contexts/ScrollContext';
-import { navBarBig, activeLink } from './navigation.module.css';
-import useScrollSpy from "../../hooks/useNavBar"
+import * as styles from './navigation.module.css';
+import useScrollSpy from "../../hooks/useNavBar";
 
 const Navbar = () => {
-  const { about, experience, projects, scrollToRef} = useContext(ScrollContext);
-  const activeId = useScrollSpy(['about', 'experience', 'projects'], { threshold: 0.5 });
+  const { about, experience, projects, scrollToRef } = useContext(ScrollContext);
+  const activeId = useScrollSpy(['about', 'experience', 'projects'], { threshold: 0.30 });
 
   return (
-    <div className={navBarBig}>
+    <div className={styles.navBar}>
       <span
-        style={{ cursor: 'pointer', fontWeight: activeId === 'about' ? 'bold' : 'normal' }}
+        className={activeId === 'about' ? styles.navLinkActive : styles.navLink}
         onClick={() => scrollToRef(about)}
       >
         About
       </span>
       &middot;
       <span
-        style={{ cursor: 'pointer', fontWeight: activeId === 'experience' ? 'bold' : 'normal' }}
+        className={activeId === 'experience' ? styles.navLinkActive : styles.navLink}
         onClick={() => scrollToRef(experience)}
       >
         Experience
       </span>
       &middot;
       <span
-        style={{ cursor: 'pointer', fontWeight: activeId === 'projects' ? 'bold' : 'normal' }}
+        className={activeId === 'projects' ? styles.navLinkActive : styles.navLink}
         onClick={() => scrollToRef(projects)}
       >
         Projects
