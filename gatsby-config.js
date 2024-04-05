@@ -12,6 +12,7 @@ module.exports = {
     title: `Janel Semple`,
     description: `This is a personal website for Janel Semple, come say hello!`,
     author: `@janelsemple`,
+    pathPrefix: `/personal-site`,
   },
   plugins: [
     // First plugin: gatsby-plugin-manifest
