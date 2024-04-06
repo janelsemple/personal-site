@@ -13,15 +13,15 @@ module.exports = {
         start_url: "/",
         background_color: "#be7730",
         display: "minimal-ui",
-        icon: "src/images/favicon-32x32.png", // This path is relative to the root of the site.
+        icon: "src/images/favicon-32x32.png",
       },
     },
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
         fonts: [
-          "Poppins:400,400i,700,700i", // Corrected the spacing and added 700i for Poppins
-          "Roboto Mono:700", // Bold 700 for Roboto Mono
+          "Poppins:400,400i,700,700i",
+          "Roboto Mono:700",
         ],
         display: "swap",
       },
