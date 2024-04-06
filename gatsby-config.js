@@ -5,6 +5,7 @@ module.exports = {
     title: "Janel Semple",
     description: "This is a personal website for Janel Semple, come say hello!",
     author: "@janelsemple",
+    image: "src/images/favicon-32x32.png",
   },
   plugins: [
     {
