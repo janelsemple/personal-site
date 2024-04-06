@@ -9,7 +9,7 @@ const Home = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      Janel: file(relativePath: { eq: "janel.jpg" }) { 
+      file(relativePath: { eq: "janel.jpg" }) { 
         publicURL
       }
     }
@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <div className={imgContainer}>
         {/* Update the src attribute to use the queried image URL */}
-        <img className={"circle"} src={data.Janel.publicURL} alt={'Janel'} />
+        <img className={"circle"} src={data.file.publicURL} alt={'Janel'} />
       </div>
       {showNavbar && <Navbar />}
     </div>
