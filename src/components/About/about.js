@@ -4,7 +4,7 @@ import {ScrollContext} from "../../contexts/ScrollContext"
 const About = () => {
   const {about} = React.useContext(ScrollContext);
   return(
-      <div className={"contentDiv"}>
+      <div ref={about} id='about' className={"contentDiv"}>
         <h1>About</h1>
         <hr />
         <p>
