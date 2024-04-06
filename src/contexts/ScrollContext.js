@@ -1,4 +1,4 @@
-import React, { createContext, useRef, useState, useEffect } from 'react';
+import React, { createContext, useRef, useState} from 'react';
 
 export const ScrollContext = createContext(undefined);
 

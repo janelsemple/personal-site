@@ -1,5 +1,7 @@
 .resumeDiv{
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
 }
 
 .smallSvg {
@@ -24,6 +26,16 @@
     gap: var(--space-1);
     flex-direction: row;
     justify-content: left;
+}
+
+@media (max-width: 1025px) {
+    .skillDiv {
+        gap: 0;
+    }
+
+    .resumeDiv {
+        gap: 0;
+    }
 }
 
 @media (max-width: 500px) {

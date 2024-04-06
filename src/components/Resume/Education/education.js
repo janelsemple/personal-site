@@ -1,5 +1,5 @@
 import * as React from "react"
-import { courseWorkItems, educationItem } from "../../../data/data.js"
+import { educationItem } from "../../../data/data.js"
 
 const Education = () => {
   return (

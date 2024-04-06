@@ -1,6 +1,6 @@
 
 export const aboutItem = {
-  description: " Hello, and welcome to my site! In 2021 I had had enough of serving tables, and decided to go back to school. I have since achieved my diploma in Information Technology with a major in software development from The Southern Alberta Institute of Technology. I am now looking for a job in the IT industry, and I am excited to see where my new career will take me. I love to learn about all things tech, and I am always looking for new ways to challenge myself."
+  description: "Welcome to my website. In 2021, due to the Covid-19 pandemic, I transitioned from my job in the service industry to pursue an interest in technology. I obtained a diploma in Information Technology, with a major in software development from SAIT. Currently I am a Junior Software Engineer at TDM Engineering, building robust software to streamline their reporting process. I love to learn about all things tech, and am always looking for new ways to challenge myself."
 }
 
 export const experienceItems = {
@@ -12,10 +12,13 @@ export const experienceItems = {
       date: 'October 2023 - Present',
       experience: [
         "Developed a solution for photo processing and PowerPoint creation using Python and Electron, reducing the time spent making reports by 50%.",
-        "Used Websockets and Protocol Buffers to establish communication between Python and Electron components.",
-        "Made use of python-specific libraries such as scikit learn and python-pptx while maintaining a robust and modular user interface with React and Typescript.",
-        "Implemented a safe development environment using Docker and Docker Compose.",
-        "Created a robust logging system using Winston to track user interactions and errors across different processes ."
+        " Used Redis and Protocol Buffers to establish a queue system between Python and Node components.",
+        " Made use of python-specific libraries such as scikit learn and" +
+        "python-pptx, while maintaining a robust and modular user" +
+        "interface with React and Typescript.",
+       "Implemented a safe development environment using Docker and Docker Compose.",
+        " Increased the speed of photo processing by 100% through" +
+        "architecture changes and algorithms."
       ]
     },
     {
@@ -25,9 +28,9 @@ export const experienceItems = {
       date: 'Sept 2022 - April 2023',
       experience: [
         "Acting as QA lead, created and implemented a comprehensive test plan for the Until You Fall PSVR2 Port, ensuring the game passed Sony’s intense technical requirements and was delivered on time.",
-        "Assisted with research for the improvement of existing QA best practices and the creation of learning material with the Unity Learn platform to expedite the onboarding of new QA members.",
-        "Carried out rigorous manual testing on three projects writing test cases for each to reach a minimum of 80% manual testing coverage.",
-        "Participated in agile teams in all phases of the software development life cycle from design to deployment."
+        "Assisted with research for the improvement of existing QA best practices, and the creation of learning material with the Unity Learn platform to expedite the onboarding of new QA members.",
+        "Carried out rigorous manual testing on three projects, writing test cases for each to reach a minimum of 80% manual testing coverage.",
+        "Participated in agile teams in all phases of the software development life cycle, from design to deployment."
       ]
     }
   ]
@@ -39,15 +42,6 @@ export const educationItem = {
   degree: 'Information Technology - Software Development',
   date: '2022 - 2023',
   GPA: '3.9'
-}
-
-export const courseWorkItems = {
-  courseWork: [
-    "Data Structures and Algorithms", "Object Oriented Design and Development", "Web Development",
-    "Database Management", "System Analysis and Design", "Operating Systems", "Software Testing",
-    "Project Management", "Security"
-  ]
-
 }
 
 export const skillsItems = {

@@ -4,7 +4,7 @@
   "description": "My personal site",
   "version": "0.1.0",
   "author": "Janel Semple janelsemple@gmail.com",
-  "homepage":  "https://janelsemple.github.io/personal-site/",
+  "homepage": "https://janelsemple.github.io/personal-site/",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -19,8 +19,7 @@
     "gatsby-source-filesystem": "^5.13.0",
     "gatsby-transformer-sharp": "^5.13.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-spotify-embed": "^2.0.4"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
