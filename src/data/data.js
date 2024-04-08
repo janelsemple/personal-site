@@ -13,11 +13,11 @@ export const experienceItems = {
       experience: [
         "Developed a solution for photo processing and PowerPoint creation using Python and Electron, reducing the time spent making reports by 50%.",
         " Used Redis and Protocol Buffers to establish a queue system between Python and Node components.",
-        " Made use of python-specific libraries such as scikit learn and" +
+        " Made use of python-specific libraries such as scikit learn and " +
         "python-pptx, while maintaining a robust and modular user" +
         "interface with React and Typescript.",
        "Implemented a safe development environment using Docker and Docker Compose.",
-        " Increased the speed of photo processing by 100% through" +
+        " Increased the speed of photo processing by 100% through " +
         "architecture changes and algorithms."
       ]
     },
@@ -67,14 +67,14 @@ export const projectsItems = {
       "Made use of Express to create REST API for storing retrieving and transcribing audio using AWS S3 MongoDB and Open AI.",
       "Utilized GraphQL for fast and seamless transfer of data.",
       "Assisted with creation of comprehensive requirements and design documentation."],
-      link: ''
+      link: 'https://github.com/CouloirStudio/verbano'
     },
     {
       title: 'Personal Site',
       description: ["Utilized Gatsby to create a fast and responsive site with React and Javascript.",
         "Created all custom components, with dynamically loaded data.",
         "Implemented a simple, performant, and responsive design with CSS that works well on all devices.",],
-      link: ''
+      link: 'https://github.com/janelsemple/personal-site'
     }
     ]
 }
