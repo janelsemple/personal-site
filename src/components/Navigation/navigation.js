@@ -5,7 +5,7 @@ import useScrollSpy from "../../hooks/useNavBar";
 
 const Navbar = () => {
   const { about, experience, projects, scrollToRef } = useContext(ScrollContext);
-  const activeId = useScrollSpy(['about', 'experience', 'projects'], { threshold: 0.30 });
+  const activeId = useScrollSpy(['about', 'experience', 'projects'], { threshold: 0.40 });
 
   return (
     <div className={styles.navBar}>
