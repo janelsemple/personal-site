@@ -17,7 +17,7 @@ export const experienceItems = {
         "processing, significantly enhancing application scalability while " +
         "improving photo processing time by 100%.",
         " Made use of python-specific libraries such as scikit learn and " +
-        "python-pptx, while maintaining a robust and modular user" +
+        "python-pptx, while maintaining a robust and modular user " +
         "interface with React and Typescript.",
        "Implemented a safe development environment using Docker and Docker Compose."
       ]
@@ -50,7 +50,7 @@ export const skillsItems = {
     "Git", "AWS S3", "Docker", "Node", "React",
     "Express", "GraphQL", "OpenAI", "Jest",
     "Cypress", "MongoDB", "Protocol Buffers",
-    "UML", "Agile", "Electron"
+    "UML", "Agile", "Electron", "Zustand"
   ]}
 
 export const languagesItems = {
@@ -64,8 +64,8 @@ export const projectsItems = {
   projects: [
     {
       title: 'Verbano',
-      description: ["Using Node and React implemented end-to-end functionality for audio recording playback and audio transcription with OpenAI using Typescript.",
-      "Made use of Express to create REST API for storing retrieving and transcribing audio using AWS S3 MongoDB and Open AI.",
+      description: ["Using Node and React implemented end-to-end functionality for audio recording, playback, and audio transcription with OpenAI using Typescript.",
+      "Made use of Express to create REST API for storing, retrieving, and transcribing audio using AWS S3 MongoDB and Open AI.",
       "Utilized GraphQL for fast and seamless transfer of data.",
       "Assisted with creation of comprehensive requirements and design documentation."],
       link: 'https://github.com/CouloirStudio/verbano'
