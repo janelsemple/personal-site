@@ -12,14 +12,12 @@ export const experienceItems = {
       date: 'October 2023 - Present',
       experience: [
         "Developed a solution for photo processing and PowerPoint creation using Python and Electron, reducing the time spent making reports by 50%.",
-        "Engineered a high-performance Redis queue system with protocol " +
-        "buffers to enable efficient multi-threading and asynchronous task " +
-        "processing, significantly enhancing application scalability while " +
-        "improving photo processing time by 100%.",
+        " Engineered a high-performance IPC system with ZeroMQ and protocol buffers to enable efficient multi-threading and asynchronous task processing, significantly enhancing application scalability while improving photo processing time by 100%.",
         " Made use of python-specific libraries such as scikit learn and " +
         "python-pptx, while maintaining a robust and modular user " +
         "interface with React and Typescript.",
-       "Implemented a safe development environment using Docker and Docker Compose."
+       "Implemented a safe development environment using Docker and Docker Compose.",
+       "Created CI/CD pipeline with Github Actions, automating the build process for macOS, Linux, and Windows."
       ]
     },
     {
